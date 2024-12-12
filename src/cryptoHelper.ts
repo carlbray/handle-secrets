@@ -6,7 +6,16 @@ const HEX = 'hex';
 const UTF_8 = 'utf8';
 const AES_256_GCM = 'aes-256-gcm';
 
-export const encrypt = (text: string, keyHex: string, ivHex: string) => {
+interface EncryptResult {
+  encrypted: string;
+  authTag: string;
+}
+
+export const encrypt = (
+  text: string,
+  keyHex: string,
+  ivHex: string,
+): EncryptResult => {
   const cipher = crypto.createCipheriv(
     AES_256_GCM,
     Buffer.from(keyHex, HEX),
