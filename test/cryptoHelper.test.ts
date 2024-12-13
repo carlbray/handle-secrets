@@ -1,3 +1,5 @@
+'use strict';
+
 import * as crypto from 'crypto';
 import {encrypt, decrypt} from '../src/cryptoHelper';
 
