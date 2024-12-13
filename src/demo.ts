@@ -2,7 +2,7 @@
 
 import 'dotenv/config'; // Loads the data from the .env for this demo
 import {encrypt, decrypt} from './cryptoHelper';
-import {getEnv} from '../src/processHelper';
+import {getEnv} from './processHelper';
 
 const plaintext = 'Sensitive data';
 const encrypted = encrypt(plaintext, getEnv('KEY'), getEnv('IV'));
