@@ -3,18 +3,19 @@
 import {getEnv} from '../src/processHelper';
 
 describe('processHelper functions', () => {
+  const TEST = 'TEST';
+
   afterEach(() => {
-    delete process.env.TEST;
+    delete process.env[TEST];
   });
 
   it('variable exists', () => {
     // Arrange
-    const name = 'TEST';
     const expected = 'expected';
-    process.env[name] = expected;
+    process.env[TEST] = expected;
 
     // Act
-    const result = getEnv(name);
+    const result = getEnv(TEST);
 
     // Assert
     expect(result).toEqual(expected);
