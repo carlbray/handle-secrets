@@ -1,14 +1,18 @@
 'use strict';
 
 import 'dotenv/config'; // Loads the data from the .env for this demo
-import {encrypt, decrypt} from './cryptoHelper';
+import {encrypt, decrypt, EncryptResult} from './cryptoHelper';
 import {getEnv} from './processHelper';
 
 const plaintext = 'Sensitive data';
-const encrypted = encrypt(plaintext, getEnv('KEY'), getEnv('IV'));
+const encrypted: EncryptResult = encrypt(
+  plaintext,
+  getEnv('KEY'),
+  getEnv('IV'),
+);
 console.log('Encrypted:', encrypted);
 
-const decrypted = decrypt(
+const decrypted: string = decrypt(
   getEnv('SECRET_1'),
   getEnv('KEY'),
   getEnv('IV'),
