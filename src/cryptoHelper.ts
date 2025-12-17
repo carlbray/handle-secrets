@@ -1,6 +1,6 @@
 'use strict';
 
-import * as crypto from 'crypto';
+import * as crypto from 'node:crypto';
 
 const HEX = 'hex';
 const UTF_8 = 'utf8';
