@@ -13,6 +13,9 @@
     "pretest": "npm run compile",
     "posttest": "npm run lint"
   },
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
