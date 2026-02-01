@@ -5,12 +5,11 @@
   "main": "demo.ts",
   "scripts": {
     "test": "jest",
+    "jest-debug": "node --loader ts-node/esm --no-warnings --trace-uncaught --trace-warnings ./node_modules/jest/bin/jest.js --config jest.config.ts",
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "tsc",
     "fix": "gts fix",
-    "prepare": "npm run compile",
-    "pretest": "npm run compile",
     "posttest": "npm run lint"
   },
   "engines": {
@@ -22,6 +21,7 @@
     "dotenv": "^17.2.3"
   },
   "devDependencies": {
+    "@jest/globals": "^30.2.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^25.1.0",
     "gts": "^7.0.0",

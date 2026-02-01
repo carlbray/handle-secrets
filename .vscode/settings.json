@@ -1,21 +1,41 @@
 {
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        ".mule": true
-    },
-    "jest.runMode": "on-demand",
-    "jest.useJest30": true,
-    "files.watcherExclude": {
-        "**/.git/objects/**": true,
-        "**/.git/subtree-cache/**": true,
-        "**/.hg/store/**": true,
-        "**/.git/**": true,
-        "**/node_modules/**": true,
-        "**/.vscode/**": true
-    },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "cSpell.diagnosticLevel": "Hint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "always"
+  },
+  "editor.defaultFormatter": "vscode.typescript-language-features",
+  "editor.detectIndentation": false,
+  "editor.inlayHints.enabled": "on",
+  "editor.insertSpaces": true,
+  "editor.pasteAs.preferences": [
+    "text.updateImports.jsts"
+  ],
+  "editor.tabSize": 4,
+  "explorer.compactFolders": false,
+  "javascript.format.semicolons": "insert",
+  "javascript.preferences.useAliasesForRenames": false,
+  "jest.jestCommandLine": "npm run jest-debug --",
+  "jest.nodeEnv": {
+    "NODE_OPTIONS": "--experimental-vm-modules"
+  },
+  "jest.useJest30": true,
+  "sonarlint.disableTelemetry": true,
+  "typescript.format.semicolons": "insert",
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.preferences.importModuleSpecifierEnding": "js",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.preferences.useAliasesForRenames": false,
+  "typescript.preferGoToSourceDefinition": false,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true
 }
