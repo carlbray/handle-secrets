@@ -1,6 +1,7 @@
 {
-    "recommendations": [
-        "dbaeumer.vscode-eslint",
-        "orta.vscode-jest"
-    ]
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "orta.vscode-jest",
+    "sonarsource.sonarlint-vscode"
+  ]
 }
