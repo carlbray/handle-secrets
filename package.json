@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^18.0.2"
+    "dotenv": "^18.0.3"
   },
   "devDependencies": {
     "@jest/globals": "^30.5.1",
